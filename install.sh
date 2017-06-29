@@ -14,6 +14,8 @@ sudo docker inspect -f '{{ .NetworkSettings.IPAddress }}' wordpressdb
 
 sudo docker pull wordpress:latest
 
-sudo docker run -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=mysqllalala -e WORDPRESS_DB_NAME=wordpress_db -p 8081:80 -v /opt/wordpress/html:/var/www/html --link wordpressdb:mysql --name wpcontainer -d wordpress
+sudo docker run -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=mysqllalala -e WORDPRESS_DB_NAME=wordpress_db -p 10.3.0.40:80:80 -v /opt/wordpress/html:/var/www/html --link wordpressdb:mysql --name wpcontainer -d wordpress
+
+sudo iptables -P FORWARD ACCEPT
 
 #http://www.techrepublic.com/article/how-to-install-wordpress-with-docker/
