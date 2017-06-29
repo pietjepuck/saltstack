@@ -17,3 +17,4 @@ sudo git clone https://github.com/pietjepuck/saltstack.git
 sudo cp -f saltstack/minion /etc/salt
 sudo salt-minion -d
 
+
