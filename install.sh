@@ -22,7 +22,6 @@ sudo iptables -P FORWARD ACCEPT
 
 sudo apt-get install syslog-ng -y
 sudo cp -f ~/saltstack/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf
-
+sudo service syslog-ng restart
 
 #https://blog.webernetz.net/2014/07/24/basic-syslog-ng-installation/
-
