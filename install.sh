@@ -21,7 +21,7 @@ sudo iptables -P FORWARD ACCEPT
 #http://www.techrepublic.com/article/how-to-install-wordpress-with-docker/
 
 sudo apt-get install syslog-ng -y
-sudo cp -f ~/home/ubuntu/saltstack/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf
+sudo cp -f ~/saltstack/syslog-ng.conf /etc/syslog-ng/syslog-ng.conf
 
 
 #https://blog.webernetz.net/2014/07/24/basic-syslog-ng-installation/
